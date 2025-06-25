@@ -1,0 +1,8 @@
+模組：session_hijacking
+目標IP：192.168.22.22
+封包數：-1
+結果：成功
+時間：20250625_210033
+
+[Session Hijack] 模擬 TCP session 篡改攻擊
+[結果] 攻擊結果：成功
