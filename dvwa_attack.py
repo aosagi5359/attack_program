@@ -1,3 +1,4 @@
+import inspect
 import tkinter as tk
 from tkinter import ttk, scrolledtext, filedialog, messagebox
 import threading
@@ -185,7 +186,13 @@ class AttackApp:
                 module.train_model()
 
             try:
-                success = module.attack(ip, packet_count, lambda msg: self.log_and_collect(msg, report_lines), spoof_ip=spoof_ip, stop_event=self.stop_event)
+                success = module.attack(
+                    broadcast_ip=ip,
+                    callback=lambda msg: self.log_and_collect(msg, report_lines),
+                    spoof_ip=spoof_ip,
+                    packet_count=packet_count,
+                    stop_event=self.stop_event
+                )
             except TypeError:
                 self.log(f"[警告] {name} 不支援停止事件，嘗試不帶 stop_event 執行")
                 success = module.attack(ip, packet_count, lambda msg: self.log_and_collect(msg, report_lines), spoof_ip=spoof_ip)

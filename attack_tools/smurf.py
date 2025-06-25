@@ -2,7 +2,7 @@ import subprocess
 import time
 import threading
 
-def attack(broadcast_ip, callback, spoof_ip, packet_count=-1, stop_event=None):
+def attack(broadcast_ip=None, ip=None, packet_count=10, callback=None, spoof_ip=None, stop_event=None, **kwargs):
     if not spoof_ip:
         callback("[hping3] Smurf 攻擊需提供被冒充的 IP（spoof_ip）作為受害者。")
         return False
